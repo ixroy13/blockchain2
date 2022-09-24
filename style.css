@@ -81,7 +81,7 @@ p {
         height: 60px;
         width: 100vw;
         position: sticky;
-        top: 91vh;
+        top: calc(100% - 60px);
         background: transparent;
         border-top: 1px solid darkgray;
         padding: 15px;
@@ -215,7 +215,7 @@ p {
 
 @media only screen and (min-width:390px) {
     .nav-bar {
-        top: 92.5vh;
+        top: calc(100% - 60px);
         height: 60px;
     }
 }
@@ -223,7 +223,13 @@ p {
 @media only screen and (min-width:400px) {
     .nav-bar {
         height: 60px;
-        top: 93vh;
+        top: calc(100% - 60px);
+    }
+}
+@media only screen and (min-width:800px) {
+    .nav-bar {
+        height: 60px;
+        top: calc(100% - 60px);
     }
 }
 
@@ -438,12 +444,15 @@ body.dark .icon {
 }
 
 body.dark .icon::after {
-    visibility: hidden;
+    display: none;
 }
 
 body.dark .nav-bar div {
     background: white;
-    box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.8),
-                     6px 6px 10px rgba(255, 255, 255, 0.2);
+    box-shadow:  20px 20px 60px #b3b3b3,
+             -20px -20px 60px #f3f3f3;
 }
 
+body.dark .nav-bar {
+    background: #808080;
+}
