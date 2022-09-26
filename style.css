@@ -12,6 +12,7 @@ body {
 }
 section {
     scroll-snap-type: x mandatory;
+}
 .title h1 {
     color: lightblue;
     letter-spacing: 1px;
