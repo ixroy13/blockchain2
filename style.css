@@ -10,7 +10,8 @@ body {
     background: #f3f0f1;
     transition: .2s;
 }
-
+section {
+    scroll-snap-type: x mandatory;
 .title h1 {
     color: lightblue;
     letter-spacing: 1px;
